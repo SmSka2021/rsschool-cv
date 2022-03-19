@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    src: url("./assets/fonts/raleway.woff2") format(woff2);
+    src: url("./assets/fonts/raleway.woff") format(woff);
+}
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Raleway", sans-serif;
+    display: grid;
+    grid-template-columns: 3% 47% 47% 3%;
+    grid-template-rows: 20px 150px 300px 300px 300px 150px 20px;
+}
+
+.header {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    border-radius: 35px;
+    background-color: gold;
+    display: flex;
+    z-index: 2;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin: 25px 55px;
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 20px;
+    transition: .3s;
+    color: rgb(12, 12, 80);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.header h1 {
+    color: rgb(20, 7, 66);
+    font-size: 40px;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0 20px;
+    color: rgb(25, 27, 160);
+}
+
+.aside {
+    grid-column: 2 / 3;
+    grid-row: 1 / 8;
+    background-color: navy;
+    position: relative;
+    z-index: 0;
+}
+
+.aside__contact {
+    margin-top: 200px;
+}
+
+.aside__contact h2,
+.aside__languages h2,
+.aside__code h2 {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0 35px 35px 0;
+    color: rgb(12, 13, 109);
+    margin-right: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aside__contact ul,
+.aside__languages ul {
+    padding-left: 40px;
+}
+
+.aside__contact li,
+.aside__contact a,
+.aside__languages li {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 25px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.aside__languages h2,
+.aside__code h2,
+.main__education h2,
+.main__summary h2,
+.main__experience h2 {
+    margin-top: 35px;
+}
+
+.aside__languages li {
+    padding-left: 15px;
+}
+
+.main {
+    grid-column: 3 / 4;
+    grid-row: 1 / 8;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.aside__code p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-left: 35px;
+    letter-spacing: 1.5px;
+}
+
+.aside__code pre {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1.2px;
+    margin-left: 20px;
+}
+
+.rightBorder {
+
+    grid-column: 4 / 5;
+    grid-row: 1 / 8;
+    background-color: navy;
+}
+
+.main__skills {
+    margin-top: 200px;
+}
+
+.main__skills h2,
+.main__education h2,
+.main__summary h2,
+.main__experience h2 {
+    background-color: navy;
+    border: 1px solid navy;
+    border-radius: 35px 0 0 35px;
+    color: rgb(255, 255, 255);
+    margin-left: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main__skills,
+.main__education,
+.main__summary,
+.main__experience {
+    padding-left: 35px;
+}
+
+.main__skills li,
+.main__education li {
+    color: navy;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.main__summary p,
+.main__experience p,
+.main__experience li {
+    color: navy;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 15px;
+    margin-right: 25px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.main__experience ul {
+    padding-left: 10px;
+    margin-left: 30px;
+}
+
+.footer {
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+    border-radius: 35px;
+    background-color: gold;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.footer p {
+    color: rgb(107, 8, 33);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(12, 12, 59);
+}
+@media screen and (max-width: 1200px) {
+    .nav-link {       
+        font-size: 12px;        
+    }
+}
+    
+@media screen and (max-width: 1000px) {
+    .nav {       
+        display: none;        
+    }
+    .container {
+        width: 60%;
+        text-align: center;
+    }
+    .footer {
+        margin-top: 30px;
+    }
+}
