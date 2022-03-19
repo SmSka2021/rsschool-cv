@@ -16,6 +16,7 @@
 ## **Education**
 * Vitebsk Masherov State University.
 * TeachMeSkills - programming school, Minsk.
+* JS/FE Pre-School 2022.
 * Academy of Postgraduate Education, Minsk
 
 ## **Summary**
